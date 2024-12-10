@@ -11,6 +11,7 @@ This is a project built in Python using Flask to provide a simple REST API that 
 A list of technologies used within the project:
 * [Python](https://www.python.org): Version 3.12.0
 * [Flask](https://flask.palletsprojects.com/en/stable/): Version 3.1.0
+- [Swagger](https://swagger.io/docs): Version 0.0.2
 ## Installation
 ***
 There are two methods to install this project.
@@ -42,7 +43,7 @@ source .venv/bin/activate
 ```
 Build the dependencies
 ```
-pip install requirements.txt -r
+pip install -r requirements.txt
 ```
 Run main.py file
 * By using python command
@@ -55,6 +56,10 @@ python3 main.py
 ```
 Open a browser and enter to
 [http://localhost:5000](http://localhost:5000)
+
+
+Or to review the endpoints in Swagger enter to
+[http:localhost:5000/apidocs](http:localhost:5000/apidocs)
 ### Via Docker-hub
 Pull the image from Docker-hub
 ```
@@ -66,3 +71,7 @@ docker run -p 5000:5000 na4va4/py_restapi
 ```
 Open a browser and enter to
 [http://localhost:5000](http://localhost:5000)
+
+
+Or to review the endpoints in Swagger enter to
+[http:localhost:5000/apidocs](http:localhost:5000/apidocs)
